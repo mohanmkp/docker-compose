@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  app:
+    build: .
+    volumes:
+      - .:/dj-app
+    ports:
+      - "8005:8005"
+    image: app:django
+    container_name: django_app_container
+    command: python manage.py runserver 0.0.0.0:8005

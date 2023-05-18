@@ -1,0 +1,19 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+
+  name: djangotest
+
+spec:
+
+  containers:
+
+  - name: djangotest
+
+    image: mohanpandit/djangotest
+
+    ports:
+
+    - containerPort: 8005
